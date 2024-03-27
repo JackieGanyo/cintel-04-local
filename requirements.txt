@@ -3,7 +3,7 @@ faicons
 palmerpenguins
 pandas
 pyarrow
-plotyly
+plotyly==5.0.0
 seaborn
 shiny
 shinylive
