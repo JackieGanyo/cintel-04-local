@@ -52,3 +52,14 @@ With the project virtual environment active in the terminal, run the following c
 py -m pip install --upgrade pip setuptools
 py -m pip install --upgrade -r requirements.txt
 Installing packages is generally a one-time setup.
+
+# Run app after launching browser
+shiny run --reload --launch-browser penguins/app.py 
+
+# Build client Side app
+shiny static-assets remove
+shinylive export penguins docs
+
+#Test app locally
+
+py -m http.server --directory docs --bind localhost 8008
