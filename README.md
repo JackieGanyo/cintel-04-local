@@ -63,3 +63,9 @@ shinylive export penguins docs
 #Test app locally
 
 py -m http.server --directory docs --bind localhost 8008
+
+# Push to GitHub
+git add .
+    #change "Your commit message" to reflect important changes to this version
+git commit -m "Your commit message" 
+git push -u origin main 
